@@ -1,17 +1,31 @@
-# SKKU System Programming Lab Assignments
+# System Programming Lab Assignments
 
-## Overview
+This repository contains implementations of several system programming assignments, each organized into separate folders. Each assignment folder includes its implementation files and documentation, meeting course requirements and coding standards.
 
-- focus on different aspects of system-level programming
-- understanding of operating system concepts.
+# Projects Included
 
-## Projects Included
+## PA1: File Search Utility
+- **Objective:** Develop a C program that reads a text file and performs various search functions based on user input.
+- **Grade:** all test cases passed
+- **Key Features:** 
+  - Single word search, multiple word search, consecutive words search, and wildcard search.
+  - Implements the Boyer-Moore algorithm for efficient string searching.
 
-1. **System Programming Lab PA1: File I/O**
-   - **Objective**: Use Unix File I/O and data structures to implement a program that performs various text search functions on a file specified as a command line input.
+## PA2: Mini-Shell
+- **Objective:** Implement a mini-shell program supporting basic shell commands, job control, I/O redirection, and background processing.
+- **Grade:** all test cases passed
+- **Key Features:**
+  - Command execution using `execvp`.
+  - Built-in commands: `bg`, `fg`, `jobs`, `cd`, `pwd`, `exit`.
+  - Self-implemented executables: `head`, `tail`, `cat`, `cp`, `mv`, `rm`.
 
-3. **System Programming Lab PA2: Command Line Shell**
-   - **Objective**: Implement a mini-shell program that supports basic shell commands, I/O redirection, background processing, and job control.
+## PA3: Reservation Server
+- **Objective:** Design and implement a multi-threaded reservation server that supports many clients.
+- **Grade:** 86.09/100
+- **Key Features:**
+  - Server manages the reservation procedure for each client.
+  - Client sends queries to the server for actions like login, booking, confirming booking, canceling booking, and logout.
+  - Supports concurrent handling of multiple clients.
 
-3. **System Programming Lab PA3: Reservation Server**
-   - **Objective**: Design and implement a multi-threaded reservation server that handles multiple clients concurrently, supporting actions such as login, booking, confirming booking, canceling booking, and logout.
+## Lab Assignments
+This repository also includes lab assignments covering topics such as FILE I/O, I/O multiplexing, daemon processes, multi-threading, IPC, and debugging with gdb.
